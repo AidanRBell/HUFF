@@ -1,0 +1,20 @@
+DR QUEUE
+
+
+- The Wind and Round-About interaction should probably just increase in areaEffector force and not adding force to Huffs body
+
+TO-DO
+
+[...] - Round About
+	- New Controls using Right Stick
+	- Pause Menu
+	- Pits & Respawning
+
+
+	8/18
+We are in the process of fixing the animation system with toggling.
+
+	8/19
+- ISSUE: the full animation of the Ground Jump plays, making it not possible to instantly buffer a volt jump until the
+	animation completes
+- ISSUE: Puff repeats twice despite us resetting the VoltJump trigger.
