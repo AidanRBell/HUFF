@@ -153,6 +153,42 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""VoltLeft"",
+                    ""type"": ""Button"",
+                    ""id"": ""e84cfee9-aec6-4ce0-989b-a905da5c8ec2"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""VoltUp"",
+                    ""type"": ""Button"",
+                    ""id"": ""2959bbc4-d4d3-4359-a393-e45e8729732b"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""VoltDown"",
+                    ""type"": ""Button"",
+                    ""id"": ""faff36ad-d1ac-43a4-a327-da45e328ac7e"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""VoltRight"",
+                    ""type"": ""Button"",
+                    ""id"": ""9d8ee7ee-0894-465a-b11d-438a1f3fed51"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -375,6 +411,94 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5e1ae1b1-7ec3-4f7b-8954-a9e2ca351001"",
+                    ""path"": ""<Gamepad>/rightStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""VoltLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4a111f8a-1963-4723-a288-4c424a398248"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""VoltLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""94a945f0-3dc7-45a9-af55-db3efb795750"",
+                    ""path"": ""<Gamepad>/rightStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""VoltUp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7b53d8a5-5217-4d24-950b-5b9bbbf4db44"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""VoltUp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""67f27af5-0893-4e92-b5c8-61e3877a219f"",
+                    ""path"": ""<Gamepad>/rightStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""VoltDown"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0d28abb5-42bf-4199-93ee-9c9d2d2ba164"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""VoltDown"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2eb08286-af2b-44fc-8ae4-ca4f805eec8b"",
+                    ""path"": ""<Gamepad>/rightStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""VoltRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b54199ea-17fe-4762-bf6f-9d32191d7af3"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""VoltRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -390,6 +514,10 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Huff_Jump = m_Huff.FindAction("Jump", throwIfNotFound: true);
         m_Huff_Toggle = m_Huff.FindAction("Toggle", throwIfNotFound: true);
         m_Huff_Pause = m_Huff.FindAction("Pause", throwIfNotFound: true);
+        m_Huff_VoltLeft = m_Huff.FindAction("VoltLeft", throwIfNotFound: true);
+        m_Huff_VoltUp = m_Huff.FindAction("VoltUp", throwIfNotFound: true);
+        m_Huff_VoltDown = m_Huff.FindAction("VoltDown", throwIfNotFound: true);
+        m_Huff_VoltRight = m_Huff.FindAction("VoltRight", throwIfNotFound: true);
     }
 
     ~@PlayerControls()
@@ -477,6 +605,10 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Huff_Jump;
     private readonly InputAction m_Huff_Toggle;
     private readonly InputAction m_Huff_Pause;
+    private readonly InputAction m_Huff_VoltLeft;
+    private readonly InputAction m_Huff_VoltUp;
+    private readonly InputAction m_Huff_VoltDown;
+    private readonly InputAction m_Huff_VoltRight;
     /// <summary>
     /// Provides access to input actions defined in input action map "Huff".
     /// </summary>
@@ -516,6 +648,22 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Huff/Pause".
         /// </summary>
         public InputAction @Pause => m_Wrapper.m_Huff_Pause;
+        /// <summary>
+        /// Provides access to the underlying input action "Huff/VoltLeft".
+        /// </summary>
+        public InputAction @VoltLeft => m_Wrapper.m_Huff_VoltLeft;
+        /// <summary>
+        /// Provides access to the underlying input action "Huff/VoltUp".
+        /// </summary>
+        public InputAction @VoltUp => m_Wrapper.m_Huff_VoltUp;
+        /// <summary>
+        /// Provides access to the underlying input action "Huff/VoltDown".
+        /// </summary>
+        public InputAction @VoltDown => m_Wrapper.m_Huff_VoltDown;
+        /// <summary>
+        /// Provides access to the underlying input action "Huff/VoltRight".
+        /// </summary>
+        public InputAction @VoltRight => m_Wrapper.m_Huff_VoltRight;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -563,6 +711,18 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Pause.started += instance.OnPause;
             @Pause.performed += instance.OnPause;
             @Pause.canceled += instance.OnPause;
+            @VoltLeft.started += instance.OnVoltLeft;
+            @VoltLeft.performed += instance.OnVoltLeft;
+            @VoltLeft.canceled += instance.OnVoltLeft;
+            @VoltUp.started += instance.OnVoltUp;
+            @VoltUp.performed += instance.OnVoltUp;
+            @VoltUp.canceled += instance.OnVoltUp;
+            @VoltDown.started += instance.OnVoltDown;
+            @VoltDown.performed += instance.OnVoltDown;
+            @VoltDown.canceled += instance.OnVoltDown;
+            @VoltRight.started += instance.OnVoltRight;
+            @VoltRight.performed += instance.OnVoltRight;
+            @VoltRight.canceled += instance.OnVoltRight;
         }
 
         /// <summary>
@@ -595,6 +755,18 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Pause.started -= instance.OnPause;
             @Pause.performed -= instance.OnPause;
             @Pause.canceled -= instance.OnPause;
+            @VoltLeft.started -= instance.OnVoltLeft;
+            @VoltLeft.performed -= instance.OnVoltLeft;
+            @VoltLeft.canceled -= instance.OnVoltLeft;
+            @VoltUp.started -= instance.OnVoltUp;
+            @VoltUp.performed -= instance.OnVoltUp;
+            @VoltUp.canceled -= instance.OnVoltUp;
+            @VoltDown.started -= instance.OnVoltDown;
+            @VoltDown.performed -= instance.OnVoltDown;
+            @VoltDown.canceled -= instance.OnVoltDown;
+            @VoltRight.started -= instance.OnVoltRight;
+            @VoltRight.performed -= instance.OnVoltRight;
+            @VoltRight.canceled -= instance.OnVoltRight;
         }
 
         /// <summary>
@@ -684,5 +856,33 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnPause(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "VoltLeft" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnVoltLeft(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "VoltUp" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnVoltUp(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "VoltDown" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnVoltDown(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "VoltRight" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnVoltRight(InputAction.CallbackContext context);
     }
 }

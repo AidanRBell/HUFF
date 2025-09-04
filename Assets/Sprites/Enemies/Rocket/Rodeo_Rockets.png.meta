@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ea62524ef301ac84caf9f9c859fb1bb8
+guid: 4160f00bec5d91748a0ec196f146c7d6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5387952384981411778
-    second: LOGO-3_0
+      213: -1488342948700834056
+    second: Rodeo_Rockets_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LOGO-3_0
+      name: Rodeo_Rockets_0
       rect:
         serializedVersion: 2
-        x: 57
-        y: 9
-        width: 1934
-        height: 946
+        x: 58
+        y: 10
+        width: 893
+        height: 990
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c72985c52ad5ca40800000000000000
-      internalID: 5387952384981411778
+      spriteID: 8f6bab649f7585be0800000000000000
+      internalID: -1488342948700834056
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      LOGO-3_0: 5387952384981411778
+      Rodeo_Rockets_0: -1488342948700834056
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

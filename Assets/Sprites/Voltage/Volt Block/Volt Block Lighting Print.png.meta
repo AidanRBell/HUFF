@@ -1,0 +1,1209 @@
+fileFormatVersion: 2
+guid: 5332238d359c18a4898172fd872b1ca1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2176195320829486332
+    second: Volt Block Lighting Print_0
+  - first:
+      213: -1136440705882553224
+    second: Volt Block Lighting Print_1
+  - first:
+      213: 5895523329444279669
+    second: Volt Block Lighting Print_2
+  - first:
+      213: 8762439543676728065
+    second: Volt Block Lighting Print_3
+  - first:
+      213: 6263659429579758999
+    second: Volt Block Lighting Print_4
+  - first:
+      213: 5711286090995842522
+    second: Volt Block Lighting Print_5
+  - first:
+      213: 6554688590761697970
+    second: Volt Block Lighting Print_6
+  - first:
+      213: 3074344752644075857
+    second: Volt Block Lighting Print_7
+  - first:
+      213: 6951184164421629916
+    second: Volt Block Lighting Print_8
+  - first:
+      213: 7199384461334045651
+    second: Volt Block Lighting Print_9
+  - first:
+      213: 3697887161418455542
+    second: Volt Block Lighting Print_10
+  - first:
+      213: -6512506583439852621
+    second: Volt Block Lighting Print_11
+  - first:
+      213: -2187333922359031274
+    second: Volt Block Lighting Print_12
+  - first:
+      213: 1607353277980000274
+    second: Volt Block Lighting Print_13
+  - first:
+      213: 8424799290947067775
+    second: Volt Block Lighting Print_14
+  - first:
+      213: -5641072260655660588
+    second: Volt Block Lighting Print_15
+  - first:
+      213: 8909976844602001820
+    second: Volt Block Lighting Print_16
+  - first:
+      213: -5284443742774575435
+    second: Volt Block Lighting Print_17
+  - first:
+      213: 176592058587470598
+    second: Volt Block Lighting Print_18
+  - first:
+      213: -6521947386280009175
+    second: Volt Block Lighting Print_19
+  - first:
+      213: -3765579318885073402
+    second: Volt Block Lighting Print_20
+  - first:
+      213: 2350774215814238274
+    second: Volt Block Lighting Print_21
+  - first:
+      213: -1328460667864901451
+    second: Volt Block Lighting Print_22
+  - first:
+      213: -896905941407372853
+    second: Volt Block Lighting Print_23
+  - first:
+      213: -8393497123656045862
+    second: Volt Block Lighting Print_24
+  - first:
+      213: 1387462919577037109
+    second: Volt Block Lighting Print_25
+  - first:
+      213: -4165267556862511386
+    second: Volt Block Lighting Print_26
+  - first:
+      213: -8783630299491849503
+    second: Volt Block Lighting Print_27
+  - first:
+      213: -1412770458037700961
+    second: Volt Block Lighting Print_28
+  - first:
+      213: -5216607019877856073
+    second: Volt Block Lighting Print_29
+  - first:
+      213: -6046179473906987876
+    second: Volt Block Lighting Print_30
+  - first:
+      213: 3471919363187411780
+    second: Volt Block Lighting Print_31
+  - first:
+      213: 3810457421508931152
+    second: Volt Block Lighting Print_32
+  - first:
+      213: -102849419758699546
+    second: Volt Block Lighting Print_33
+  - first:
+      213: -684167160524317045
+    second: Volt Block Lighting Print_34
+  - first:
+      213: 2389661690941652441
+    second: Volt Block Lighting Print_35
+  - first:
+      213: -263514406261280478
+    second: Volt Block Lighting Print_36
+  - first:
+      213: 5222392028755341664
+    second: Volt Block Lighting Print_37
+  - first:
+      213: -2557545115125575570
+    second: Volt Block Lighting Print_38
+  - first:
+      213: -1268727099017594036
+    second: Volt Block Lighting Print_39
+  - first:
+      213: -8176215176230342252
+    second: Volt Block Lighting Print_40
+  - first:
+      213: 7886605121032912532
+    second: Volt Block Lighting Print_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 600
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 485
+        width: 148
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b571cb2e99cc1e0800000000000000
+      internalID: -2176195320829486332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 462
+        width: 148
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8748399f23d8a30f0800000000000000
+      internalID: -1136440705882553224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_2
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 399
+        width: 91
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575fd887b3b11d150800000000000000
+      internalID: 5895523329444279669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_3
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 378
+        width: 72
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103ffaee6507a9970800000000000000
+      internalID: 8762439543676728065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_4
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 406
+        width: 81
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d902e901dfce650800000000000000
+      internalID: 6263659429579758999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_5
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 387
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: addbf68a070924f40800000000000000
+      internalID: 5711286090995842522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_6
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 387
+        width: 70
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b228a98b8ee6fa50800000000000000
+      internalID: 6554688590761697970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_7
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 414
+        width: 99
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151bf6293444aaa20800000000000000
+      internalID: 3074344752644075857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_8
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 467
+        width: 166
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd7fba82b21977060800000000000000
+      internalID: 6951184164421629916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_9
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 518
+        width: 131
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3684b060a59e360800000000000000
+      internalID: 7199384461334045651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_10
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 383
+        width: 120
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f913d3f7c8815330800000000000000
+      internalID: 3697887161418455542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 408
+        width: 114
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bbbca064cdee95a0800000000000000
+      internalID: -6512506583439852621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 213
+        width: 128
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ac0a8f26705a1e0800000000000000
+      internalID: -2187333922359031274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_13
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 314
+        width: 146
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210ce8a4a477e4610800000000000000
+      internalID: 1607353277980000274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_14
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 204
+        width: 107
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7fdcd09156eae470800000000000000
+      internalID: 8424799290947067775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_15
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 310
+        width: 140
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d14f47aaa2e6b1b0800000000000000
+      internalID: -5641072260655660588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_16
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 367
+        width: 194
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99457babb896ab70800000000000000
+      internalID: 8909976844602001820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_17
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 288
+        width: 107
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5beb2640a62e9a6b0800000000000000
+      internalID: -5284443742774575435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_18
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 123
+        width: 99
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60bd24aaa81637200800000000000000
+      internalID: 176592058587470598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_19
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 148
+        width: 77
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9222efc28636d75a0800000000000000
+      internalID: -6521947386280009175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_20
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 234
+        width: 112
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e3c447f89fdbbc0800000000000000
+      internalID: -3765579318885073402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_21
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 284
+        width: 128
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24051c0c1b0af9020800000000000000
+      internalID: 2350774215814238274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_22
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 229
+        width: 171
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b895d1af0c509de0800000000000000
+      internalID: -1328460667864901451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_23
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 184
+        width: 106
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9e97d5ccc8d83f0800000000000000
+      internalID: -896905941407372853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_24
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 196
+        width: 98
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adae73136de448b80800000000000000
+      internalID: -8393497123656045862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_25
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 196
+        width: 113
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5396a6c9c22414310800000000000000
+      internalID: 1387462919577037109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_26
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 96
+        width: 75
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e630ceb93ff136c0800000000000000
+      internalID: -4165267556862511386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_27
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 16
+        width: 112
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea2e60c7c64a1680800000000000000
+      internalID: -8783630299491849503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_28
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 59
+        width: 84
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f963f7be0c4d46ce0800000000000000
+      internalID: -1412770458037700961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_29
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 94
+        width: 87
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc0f5fdd83ea97b0800000000000000
+      internalID: -5216607019877856073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_30
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 110
+        width: 146
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c04817dc7a71ca0800000000000000
+      internalID: -6046179473906987876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_31
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 17
+        width: 117
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b069b044cbe2030800000000000000
+      internalID: 3471919363187411780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_32
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 10
+        width: 86
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e6ac016d671e430800000000000000
+      internalID: 3810457421508931152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_33
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 136
+        width: 107
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb7de56ffa929ef0800000000000000
+      internalID: -102849419758699546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_34
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 13
+        width: 121
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ed5f5a7995186f0800000000000000
+      internalID: -684167160524317045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_35
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 94
+        width: 93
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ddbfed95a8c92120800000000000000
+      internalID: 2389661690941652441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_36
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 21
+        width: 77
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 221399d2b0fc75cf0800000000000000
+      internalID: -263514406261280478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_37
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 22
+        width: 112
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0613bc771e9a97840800000000000000
+      internalID: 5222392028755341664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_38
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 17
+        width: 68
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6097eba446c18cd0800000000000000
+      internalID: -2557545115125575570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_39
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 19
+        width: 189
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4bf42aec63946ee0800000000000000
+      internalID: -1268727099017594036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_40
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 14
+        width: 103
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491f1addd9f388e80800000000000000
+      internalID: -8176215176230342252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volt Block Lighting Print_41
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 11
+        width: 151
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e71f29299d27d60800000000000000
+      internalID: 7886605121032912532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Volt Block Lighting Print_0: -2176195320829486332
+      Volt Block Lighting Print_1: -1136440705882553224
+      Volt Block Lighting Print_10: 3697887161418455542
+      Volt Block Lighting Print_11: -6512506583439852621
+      Volt Block Lighting Print_12: -2187333922359031274
+      Volt Block Lighting Print_13: 1607353277980000274
+      Volt Block Lighting Print_14: 8424799290947067775
+      Volt Block Lighting Print_15: -5641072260655660588
+      Volt Block Lighting Print_16: 8909976844602001820
+      Volt Block Lighting Print_17: -5284443742774575435
+      Volt Block Lighting Print_18: 176592058587470598
+      Volt Block Lighting Print_19: -6521947386280009175
+      Volt Block Lighting Print_2: 5895523329444279669
+      Volt Block Lighting Print_20: -3765579318885073402
+      Volt Block Lighting Print_21: 2350774215814238274
+      Volt Block Lighting Print_22: -1328460667864901451
+      Volt Block Lighting Print_23: -896905941407372853
+      Volt Block Lighting Print_24: -8393497123656045862
+      Volt Block Lighting Print_25: 1387462919577037109
+      Volt Block Lighting Print_26: -4165267556862511386
+      Volt Block Lighting Print_27: -8783630299491849503
+      Volt Block Lighting Print_28: -1412770458037700961
+      Volt Block Lighting Print_29: -5216607019877856073
+      Volt Block Lighting Print_3: 8762439543676728065
+      Volt Block Lighting Print_30: -6046179473906987876
+      Volt Block Lighting Print_31: 3471919363187411780
+      Volt Block Lighting Print_32: 3810457421508931152
+      Volt Block Lighting Print_33: -102849419758699546
+      Volt Block Lighting Print_34: -684167160524317045
+      Volt Block Lighting Print_35: 2389661690941652441
+      Volt Block Lighting Print_36: -263514406261280478
+      Volt Block Lighting Print_37: 5222392028755341664
+      Volt Block Lighting Print_38: -2557545115125575570
+      Volt Block Lighting Print_39: -1268727099017594036
+      Volt Block Lighting Print_4: 6263659429579758999
+      Volt Block Lighting Print_40: -8176215176230342252
+      Volt Block Lighting Print_41: 7886605121032912532
+      Volt Block Lighting Print_5: 5711286090995842522
+      Volt Block Lighting Print_6: 6554688590761697970
+      Volt Block Lighting Print_7: 3074344752644075857
+      Volt Block Lighting Print_8: 6951184164421629916
+      Volt Block Lighting Print_9: 7199384461334045651
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

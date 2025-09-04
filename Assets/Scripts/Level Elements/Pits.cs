@@ -2,11 +2,9 @@ using UnityEngine;
 
 public class Pits : MonoBehaviour
 {
-    public LayerMask HuffLayer;
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == HuffLayer)
+        if (collision.gameObject.layer == 3)
         {
             collision.gameObject.GetComponent<HuffMovement>().Die();
         }

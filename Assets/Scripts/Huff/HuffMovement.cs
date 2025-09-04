@@ -1,6 +1,3 @@
-using JetBrains.Annotations;
-using Unity.VisualScripting;
-using UnityEditor.Profiling;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -20,15 +17,15 @@ public class HuffMovement : MonoBehaviour
     public bool canMove = true;
     public float groundLinDamp, airLinDamp;
     private float defaultGravityScale;
+    private Vector2 currentVelocity, targetVelocity;
 
     const int DIR_LEFT = -1, DIR_RIGHT = 1;
     float spriteScaleVal;
     
     // Ground Detection
-    [SerializeField] private Vector2 groundDetectBoxSize;
-    [SerializeField] private Vector3 castOffsetX;
-    [SerializeField] private float castDistance;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private float groundDetectOffsetY = 0f;
+    private Vector2 groundDetectBoxSize = Vector2.zero;
 
     // Character State
     public enum CharacterState
@@ -79,12 +76,20 @@ public class HuffMovement : MonoBehaviour
 
     // RoundAbout
     bool inRoundAbout = false;
+    [SerializeField] private float maxRoundAboutSpeed = 5f;
+    [SerializeField] private float roundAboutSmoothTime = 0.1f;
+    float roundAboutTime;
     [SerializeField] private Vector2 roundAboutForce;
+    [SerializeField] Vector2 roundAboutHitboxSize = new Vector2(2,2);
+    bool wallBouncing = false;
+
 
     // Spiral
     bool inSpiral = false;
     [SerializeField] private float spiralGravityScale;
 
+    // Respawning
+    [SerializeField] private RespawnManager respawnManager;
 
     // Debugging
     float triggerTestTime = 0f;
@@ -96,8 +101,12 @@ public class HuffMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
 
+        groundDetectBoxSize = new Vector2(boxCollider.size.x, boxCollider.size.y / 3);
+
         spriteScaleVal = transform.localScale.x;
         defaultGravityScale = body.gravityScale;
+
+        roundAboutTime = roundAboutSmoothTime; // make amount of time the max smooth time
     }
 
     private void OnEnable()
@@ -135,16 +144,28 @@ public class HuffMovement : MonoBehaviour
 
     private void Update()
     {
-        //Debug.Log("Current jump = " + currentJumpIndex + ", v count = " + voltageCount);
+        // ROUND-ABOUT Air Drift
+        if (inRoundAbout && roundAboutTime > 0)
+        {
+            float dir = 0f;
+            if (wallBouncing)
+            {
+                dir = (transform.localScale.x > 0) ? DIR_RIGHT : DIR_LEFT;
+            }
+            else
+            {
+                dir = analogInput.x;
+                if (dir == 0)
+                    dir = (transform.localScale.x > 0) ? DIR_RIGHT : DIR_LEFT;
+            }
 
-        //Debug.Log(huffState.ToString());
-
-        
+            targetVelocity = new Vector2(roundAboutForce.x * dir, roundAboutForce.y);
+        }
     }
 
     private void FixedUpdate()
     {
-        setXYInputs();
+        setAnalogInput();
 
         if (canMove) // if the player can move
         {
@@ -168,49 +189,75 @@ public class HuffMovement : MonoBehaviour
                 }
             }
 
+            // RUNNING AND AIR DRIFT
             float dir = analogInput.x;
-            
             if (dir != 0)
             {
                 if (onGround())
                     Run(dir);
                 else
-                    AirDrift(dir);
+                {
+                    if (inRoundAbout)
+                        roundAboutAirDrift();
+                    else
+                        AirDrift(dir);
+                }
             }
 
+            // PUFF
             if (inPuff)
                 body.linearVelocityY = 0;
 
+            // ROUND ABOUT
+            if (inRoundAbout)
+            {
+                roundAboutCollisionDetection();
+
+                if (roundAboutTime > 0)
+                {
+                    roundAboutTime -= Time.deltaTime;
+
+                    Vector2 v = Vector2.SmoothDamp(body.linearVelocity, targetVelocity, ref currentVelocity, roundAboutSmoothTime);
+                    body.linearVelocity = v;
+                }
+                else
+                {
+                    Vector2 v = Vector2.SmoothDamp(body.linearVelocity, new Vector2(targetVelocity.x / 2, body.linearVelocityY), ref currentVelocity, 0.05f);
+                    body.linearVelocity = v;
+                }
+            }
+            
+
         }
 
+        // OnGround Dictated Ground Interactions
         if (onGround())
         {
-            voltageCount = 1; // NOTE THIS SHOULD BE TEMPORARY
-            inPuff = false;
+            voltageCount = 5; // NOTE THIS SHOULD BE TEMPORARY
 
             body.linearDamping = groundLinDamp; // set the linear dampening to the GROUND linear dampening value
 
-            if (inSpiral)
-            {
-                toggleSpiralOff();
-            }
+            cancelAllVoltJumps();
         }
         else
             body.linearDamping = airLinDamp; // set the linear dampening to the AIR linear dampening value
 
         // Animations
-        anim.SetFloat("VelocityX", Mathf.Abs(body.linearVelocityX));
-        anim.SetBool("OnGround", onGround());
-        anim.SetInteger("CurrVoltJump", currentJumpIndex);
+        if (anim != null)
+        {
+            anim.SetFloat("VelocityX", Mathf.Abs(body.linearVelocityX));
+            anim.SetBool("OnGround", onGround());
+            anim.SetInteger("CurrVoltJump", currentJumpIndex);
+        }
 
         huffState = EvaluateState();
     }
 
     private bool onGround()
     {
-        if (Physics2D.BoxCast(transform.position + castOffsetX, groundDetectBoxSize, 0, -transform.up, castDistance, groundLayer))
-            return true;
-        return false;
+        // EXPLANATION: we cast a box thats a bit under the feet of Huff, extending to exactly the width of the boxCollider, and only detecting the ground layers
+        RaycastHit2D raycast = Physics2D.BoxCast(boxCollider.bounds.center, groundDetectBoxSize, 0f, Vector2.down, boxCollider.bounds.extents.y + groundDetectOffsetY, groundLayer);
+        return raycast.collider != null;
     }
 
     private void Run(float direction)
@@ -243,10 +290,7 @@ public class HuffMovement : MonoBehaviour
         {
             GroundJump();
         }
-        else
-        {
-            
-        }
+        else { }
     }
 
     
@@ -263,7 +307,7 @@ public class HuffMovement : MonoBehaviour
 
     void GroundJump()
     {
-        anim.SetTrigger("Jump");
+        if (anim != null) anim.SetTrigger("Jump");
         huffState = CharacterState.Jumping;
 
         body.AddForce(new Vector3(0, initialJumpForce * 1000, 0));
@@ -279,7 +323,7 @@ public class HuffMovement : MonoBehaviour
         if (canVoltJump() && currentJumpIndex >= 0 && currentJumpIndex <= 7)  // assures the player can Volt Jump, and current jump index is valid.
         {
             voltageCount--;
-            anim.SetTrigger("VoltJump");
+            if (anim != null) anim.SetTrigger("VoltJump");
 
             switch (currentJumpIndex)
             {
@@ -301,7 +345,17 @@ public class HuffMovement : MonoBehaviour
 
     public void activateToggleAnimTrigger()
     {
-        anim.SetTrigger("Toggle");
+        if (anim != null) anim.SetTrigger("Toggle");
+    }
+
+    public void cancelAllVoltJumps()
+    {
+        if (inPuff)
+            cancelPuff();
+        if (inRoundAbout)
+            cancelRoundAbout();
+        if (inSpiral)
+            cancelSpiral();
     }
 
     // NOTE: we need to make a volt version
@@ -315,56 +369,97 @@ public class HuffMovement : MonoBehaviour
         
     }
 
-    void togglePuffOn()
+    void beginPuff()
     {
         inPuff = true;
         savedMomentumY = body.linearVelocityY;
     }
-    void togglePuffOff()
+    void cancelPuff()
     {
-        anim.ResetTrigger("VoltJump");
+        if (anim != null) anim.ResetTrigger("VoltJump");
         inPuff = false;
         body.linearVelocityY = savedMomentumY / 2;
     }
 
     void RoundAbout()
     {
-        anim.SetTrigger("RoundAbout");
+        if (anim != null) anim.SetTrigger("RoundAbout");
         inRoundAbout = true;
 
-        body.AddForce(roundAboutForce);
+        float dir = analogInput.x;
+        if (dir == 0)
+            dir = (transform.localScale.x > 0) ? DIR_RIGHT : DIR_LEFT;
+
+        LookInDirection((int) dir);
     }
 
-    void toggleRoundAboutOn()
+    void roundAboutCollisionDetection()
+    { 
+        RaycastHit2D wallRaycast = Physics2D.BoxCast(boxCollider.bounds.center, roundAboutHitboxSize, 0f, Vector2.down, 0f, 7);
+        RaycastHit2D[] crackedBlockRaycast = Physics2D.BoxCastAll(boxCollider.bounds.center, roundAboutHitboxSize, 0f, Vector2.down, 0f, 12);
+
+        //if (wallRaycast.collider != null) // collided with wall
+        //{
+        //    Debug.Log("hit a wall");
+        //    RaycastHit2D leftRaycast = Physics2D.Raycast(boxCollider.bounds.center, Vector2.left, boxCollider.bounds.extents.y + 0.05f, 7);
+        //    if (leftRaycast.collider != null)
+        //        roundAboutWallBounce(DIR_RIGHT); // if we detect a wall right next to us on the left, we can assume we just hit, and we should thus bounce to the right
+        //    else
+        //        roundAboutWallBounce(DIR_LEFT); // if there was no wall to the left, we can assume the wall was to the right, and thus bounce to the left
+        //}
+
+        //foreach (RaycastHit2D crackedBlock in crackedBlockRaycast)
+        //{
+        //    crackedBlock.collider.gameObject.SetActive(false);
+        //    Debug.Log("hit Cracked Block");
+        //}
+    }
+
+    void roundAboutWallBounce(int dir)
+    {
+        LookInDirection(dir);
+        wallBouncing = true;
+        roundAboutTime = roundAboutSmoothTime;
+    }
+
+    void roundAboutAirDrift()
+    {
+
+    }
+
+    void beginRoundAbout()
     {
         inRoundAbout = true;
     }
 
-    void toggleRoundAboutOff()
+    void cancelRoundAbout()
     {
-        anim.ResetTrigger("VoltJump");
+        if (anim != null) anim.ResetTrigger("VoltJump");
         inRoundAbout = false;
+        wallBouncing = false;
+
+        roundAboutTime = roundAboutSmoothTime;
     }
 
     void Bounce()
     {
-        anim.ResetTrigger("VoltJump");
+        if (anim != null) anim.ResetTrigger("VoltJump");
     }
 
     void Nibble()
     {
-        anim.ResetTrigger("VoltJump");
+        if (anim != null) anim.ResetTrigger("VoltJump");
     }
 
     void Spiral()
     {
         inSpiral = true;
-        anim.SetTrigger("Spiral");
+        if (anim != null) anim.SetTrigger("Spiral");
 
         body.gravityScale = spiralGravityScale;
     }
 
-    void toggleSpiralOff()
+    void cancelSpiral()
     {
         inSpiral = false;
         body.gravityScale = defaultGravityScale;
@@ -372,22 +467,22 @@ public class HuffMovement : MonoBehaviour
 
     void ZapLine()
     {
-        anim.ResetTrigger("VoltJump");
+        if (anim != null) anim.ResetTrigger("VoltJump");
     }
 
     void CatchNChuck()
     {
-        anim.ResetTrigger("VoltJump");
+        if (anim != null) anim.ResetTrigger("VoltJump");
     }
 
     void Glide()
     {
-        anim.ResetTrigger("VoltJump");
+        if (anim != null) anim.ResetTrigger("VoltJump");
     }
 
     public void Die()
     {
-
+        respawnManager.HuffDied();
     }
 
     public void setJump(int jumpIndex)
@@ -397,7 +492,7 @@ public class HuffMovement : MonoBehaviour
         VoltJump();
     }
 
-    void setXYInputs()
+    void setAnalogInput()
     {
         float x = 0, y = 0;
 
@@ -441,22 +536,22 @@ public class HuffMovement : MonoBehaviour
         return CharacterState.Unknown;
     }
 
-    void transitionJump(int jumpIndex)
-    {
-        togglePuffOff();
-        toggleSpiralOff();
-        
-    }
-
-    public void bodyAddForce(Vector2 dir)
+    // Doesn't work properly
+    public void windAddForce(Vector2 dir)
     {
         body.AddForce(dir);
     }
 
-    /** For drawing the Ground Detection Box */
-    //private void OnDrawGizmos()
-    //{
-    //    Gizmos.DrawWireCube((transform.position + castOffsetX) - transform.up * castDistance, groundDetectBoxSize);
-    //}
+    private void OnDrawGizmos()
+    {
+        //Vector2 center = boxCollider.bounds.center + Vector3.down * (boxCollider.bounds.extents.y + groundDetectOffsetY);
+        //Vector2 size = new Vector2(boxCollider.bounds.size.x, 0.1f);
+
+        //Gizmos.DrawWireCube(center, size);
+
+        //Collider2D wallRaycast = Physics2D.OverlapBox(boxCollider.bounds.center, new Vector2(0.65f, 0.65f), 0f, 7);
+
+        //Gizmos.DrawWireCube(boxCollider.bounds.center, roundAboutHitboxSize);
+    }
 
 }

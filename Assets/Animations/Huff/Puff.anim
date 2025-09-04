@@ -22,19 +22,19 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: 8037029193267524386, guid: 4a57b18cc11aadd4da2b5dc3d181f6b4, type: 3}
-    - time: 0.016666668
-      value: {fileID: 1089989937260428880, guid: c450daa97e9fd6944b4cadd31c018157, type: 3}
     - time: 0.033333335
-      value: {fileID: -1936038942874381191, guid: 830bdb980062f06459e5c13d2927801c, type: 3}
-    - time: 0.05
-      value: {fileID: -3457805808179379687, guid: dcc1b0285fca81649958daf89ef9547c, type: 3}
-    - time: 0.26666668
-      value: {fileID: -1936038942874381191, guid: 830bdb980062f06459e5c13d2927801c, type: 3}
-    - time: 0.28333333
       value: {fileID: 1089989937260428880, guid: c450daa97e9fd6944b4cadd31c018157, type: 3}
-    - time: 0.3
+    - time: 0.05
+      value: {fileID: -1936038942874381191, guid: 830bdb980062f06459e5c13d2927801c, type: 3}
+    - time: 0.083333336
+      value: {fileID: -3457805808179379687, guid: dcc1b0285fca81649958daf89ef9547c, type: 3}
+    - time: 0.36666667
+      value: {fileID: -1936038942874381191, guid: 830bdb980062f06459e5c13d2927801c, type: 3}
+    - time: 0.4
+      value: {fileID: 1089989937260428880, guid: c450daa97e9fd6944b4cadd31c018157, type: 3}
+    - time: 0.41666666
       value: {fileID: 8037029193267524386, guid: 4a57b18cc11aadd4da2b5dc3d181f6b4, type: 3}
-    - time: 0.31666666
+    - time: 0.45
       value: {fileID: 3048634865960980350, guid: 879d10cf3b2448b458ff28445effb562, type: 3}
     attribute: m_Sprite
     path: 
@@ -71,7 +71,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.33333334
+    m_StopTime: 0.46666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -92,14 +92,14 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.05
-    functionName: togglePuffOn
+    functionName: beginPuff
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.3
-    functionName: togglePuffOff
+  - time: 0.41666666
+    functionName: cancelPuff
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

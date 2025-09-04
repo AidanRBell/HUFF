@@ -16,12 +16,10 @@ public class Wind : MonoBehaviour
     {
         if (collision.gameObject.layer == 3) // layer for Huff
         {
-            Debug.Log("colided with Huff");
 
             if (collision.gameObject.GetComponent<HuffMovement>().EvaluateState().ToString() == "RoundAbout")
             {
-                Debug.Log("Doing roundabout");
-                collision.gameObject.GetComponent<HuffMovement>().bodyAddForce(direction * boostFactor);
+                collision.gameObject.GetComponent<HuffMovement>().windAddForce(direction * boostFactor);
             }
         }
     }

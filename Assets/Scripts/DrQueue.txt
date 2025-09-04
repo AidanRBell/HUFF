@@ -18,3 +18,6 @@ We are in the process of fixing the animation system with toggling.
 - ISSUE: the full animation of the Ground Jump plays, making it not possible to instantly buffer a volt jump until the
 	animation completes
 - ISSUE: Puff repeats twice despite us resetting the VoltJump trigger.
+
+	8/26
+- For GROUND DETECTION: make it a box collider with the exact x value of the boxCollider
